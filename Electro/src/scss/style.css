@@ -192,6 +192,8 @@ header #header_ftr .container .col-3 span {
   cursor: pointer;
 }
 header #header_ftr .container .col-3 .department_cntnt {
+  position: absolute;
+  width: 310px;
   z-index: 1;
   padding: 0;
   background-color: #fff;
@@ -432,4 +434,9 @@ header #header_ftr .container .col-7 ul .feature span {
 header #header_ftr .container .col-2 span {
   font-size: 13px;
   font-weight: 700;
+}
+
+main button {
+  border: none;
+  background: transparent;
 }/*# sourceMappingURL=style.css.map */

@@ -78,9 +78,20 @@
                         <i class="bi bi-arrow-repeat"></i>
                        <span>0</span>
                     </li>
-                    <li>
+                    <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                         <i class="bi bi-heart"></i>
                        <span>0</span>
+                        
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                            ...
+                            </div>
+                        </div>
+
                     </li>
                     <li>
                         <i class="bi bi-bag-dash"></i>
@@ -369,7 +380,7 @@
      </header>
 
      <main>
-
+       
      </main>
 
      <footer>

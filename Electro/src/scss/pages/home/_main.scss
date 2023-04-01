@@ -180,6 +180,8 @@ header{
                     cursor: pointer;
                 }
                 .department_cntnt{
+                    position: absolute;
+                    width: 310px;
                     z-index: 1;
                     padding: 0;
                     background-color: #fff;
@@ -436,5 +438,11 @@ header{
             }
         }
         }
+    }
+}
+main{
+    button{
+        border: none;
+        background: transparent;
     }
 }
