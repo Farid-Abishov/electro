@@ -15,6 +15,11 @@ body {
 header #header_top {
   padding: 5px 0px;
 }
+@media (max-width: 576px) {
+  header #header_top {
+    display: none;
+  }
+}
 header #header_top .container {
   display: flex;
   justify-content: space-between;
@@ -25,6 +30,7 @@ header #header_top .container .top_left {
   display: inline-block;
 }
 header #header_top .container .top_left ul {
+  padding: 0;
   display: flex;
 }
 header #header_top .container .top_left ul li {
@@ -39,6 +45,7 @@ header #header_top .container .top_right {
 }
 header #header_top .container .top_right ul {
   display: flex;
+  padding: 0;
 }
 header #header_top .container .top_right ul li {
   font-size: 14px;
@@ -50,4 +57,22 @@ header #header_top .container .top_right ul li a {
 }
 header #header_top .container .top_right ul li i {
   cursor: pointer;
+}
+header #header_mid .container {
+  padding: 0;
+}
+header #header_mid .container .col-6 form input {
+  width: 530px;
+  border-radius: 15px;
+  border: 2px solid #fed700;
+  padding: 5px 6px;
+  color: gray;
+}
+header #header_mid .container .col-6 form button {
+  transform: translateX(-49px);
+  background-color: #fed700;
+  border: none;
+  padding: 5px 14px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }/*# sourceMappingURL=style.css.map */

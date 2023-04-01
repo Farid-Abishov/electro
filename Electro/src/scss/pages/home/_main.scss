@@ -1,5 +1,8 @@
 header{
     #header_top{
+        @media(max-width:576px){
+            display: none;
+        }
         padding: 5px 0px;
         .container{
         @include flex(flex,row,space-between);
@@ -7,6 +10,7 @@ header{
             .top_left{
                 display:inline-block;
                 ul{
+                    padding: 0;
                     display: flex;
                     li{
                         font-size: 14px;
@@ -21,7 +25,7 @@ header{
                 display: inline-block;
                  ul{
                     display: flex;
-                   
+                   padding: 0;
                     li{
                     font-size: 14px;
 
@@ -37,5 +41,30 @@ header{
                  }
             }
         }
+    }
+    #header_mid{
+     .container{
+      padding: 0;
+      .col-6{
+        form{
+            input{
+                width: 530px;
+                border-radius: 15px;
+                border: 2px solid $btn_clr ;
+               padding: 5px 6px;
+               color: gray;
+            }
+            button{
+                transform: translateX( -49px);
+                background-color: $btn_clr;
+                border: none;
+                padding: 5px 14px;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                 
+            }
+        }
+      }
+     }
     }
 }
