@@ -224,6 +224,16 @@ header{
                     i{
                         font-size: 12px;                        
                     }
+                    span{
+                        position: absolute;
+                        top: -13px;
+                        right: 1px;
+                        font-size: 11px;
+                        display: block;
+                        padding: 0px 3px;
+                        color: #fff;
+                        
+                    }
                   
                 }
                 .home{
@@ -278,6 +288,66 @@ header{
                             }
                         }
                     }
+                   span{
+                    background-color: rgb(87, 199, 87);
+
+                   }                   
+                }
+                .gift{
+                    &:hover{
+                        .container{
+                            display: block;
+                        }
+                    }   
+                    .container{
+                        left: -170px;
+                        width: 955px;
+                        @include nav_cntnt(none,3px solid $btn_clr,10px,10px,2,#fff,absolute,rgba(0, 0, 0, 0.16) 0px 1px 4px,27px);
+                        .gift_cntnt{
+                            padding-top: 10px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                cursor: pointer;
+                                // display: block;
+                                position: relative;
+                                
+                                // &::after{
+                                //     content: "";
+                                //     position: absolute;
+                                //     width: 100%;
+                                //     left: 0;
+                                //     top: 0;
+                                //     height: 0;
+                                //     transition: all ease-in-out .2s;
+                                //     background-color: rgb(104, 97, 97);
+                                // }
+                            }
+                            p{
+                                color: red;
+                                span{
+                                    display: inline-block;
+                                    background-color: #fff;
+                                    font-size: 14px;
+                                    color: rgba(116, 114, 114, 0.567);
+                                    text-decoration: line-through;
+                                }
+                            }
+                        }
+                    }
+                }
+                .pages{
+                    span{
+                        background-color: rgb(56, 93, 189);
+
+                       }  
+                }
+                .feature{
+                    span{
+                        background-color: rgb(236, 19, 19);
+    
+                       }  
                 }
             }
         }
