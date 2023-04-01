@@ -338,6 +338,44 @@ header{
                     }
                 }
                 .pages{
+                    &:hover{
+                        ul{
+                            display: block;
+                        }
+                    }
+                    ul{
+                        width: 200px;
+                        @include nav_cntnt(none,3px solid $btn_clr,10px,10px,2,#fff,absolute,rgba(0, 0, 0, 0.16) 0px 1px 4px,27px);
+                        li{
+                            transition: all ease-in-out .3s;
+                            cursor: pointer;
+                          
+                           &:hover{
+                            color: $btn_clr;
+                           }
+                           &:nth-child(2){
+                            position: relative;
+                            display: flex;
+                            justify-content: space-between;
+                            .flyout_rght_cntnt{
+                                display: none;
+                                position: absolute;
+                                top: -22px;
+                                right: 0;
+                            }
+                            &:hover{
+                                .flyout_rght_cntnt{
+                                    display: block;
+                                }
+                            }
+                           }
+                           i{
+                            color: black;
+                            font-size: 14px;
+                           }
+
+                        }
+                    }
                     span{
                         background-color: rgb(56, 93, 189);
 

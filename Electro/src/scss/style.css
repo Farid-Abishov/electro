@@ -337,6 +337,46 @@ header #header_ftr .container .col-7 ul .gift .container .gift_cntnt p span {
   color: rgba(116, 114, 114, 0.567);
   text-decoration: line-through;
 }
+header #header_ftr .container .col-7 ul .pages:hover ul {
+  display: block;
+}
+header #header_ftr .container .col-7 ul .pages ul {
+  width: 200px;
+  display: none;
+  border-top: 3px solid #fed700;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 2;
+  background-color: #fff;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  top: 27px;
+}
+header #header_ftr .container .col-7 ul .pages ul li {
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+header #header_ftr .container .col-7 ul .pages ul li:hover {
+  color: #fed700;
+}
+header #header_ftr .container .col-7 ul .pages ul li:nth-child(2) {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+header #header_ftr .container .col-7 ul .pages ul li:nth-child(2) .flyout_rght_cntnt {
+  display: none;
+  position: absolute;
+  top: -22px;
+  right: 0;
+}
+header #header_ftr .container .col-7 ul .pages ul li:nth-child(2):hover .flyout_rght_cntnt {
+  display: block;
+}
+header #header_ftr .container .col-7 ul .pages ul li i {
+  color: black;
+  font-size: 14px;
+}
 header #header_ftr .container .col-7 ul .pages span {
   background-color: rgb(56, 93, 189);
 }
