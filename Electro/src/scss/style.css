@@ -15,6 +15,10 @@ body {
 header #header_top {
   padding: 5px 0px;
 }
+header #header_top hr {
+  margin: 0;
+  color: rgb(176, 173, 173);
+}
 @media (max-width: 576px) {
   header #header_top {
     display: none;
@@ -48,6 +52,7 @@ header #header_top .container .top_right ul {
   padding: 0;
 }
 header #header_top .container .top_right ul li {
+  position: relative;
   font-size: 14px;
   margin: 0px 10px;
 }
@@ -58,8 +63,55 @@ header #header_top .container .top_right ul li a {
 header #header_top .container .top_right ul li i {
   cursor: pointer;
 }
+header #header_top .container .top_right ul li .globe_content {
+  visibility: hidden;
+  z-index: 2;
+  width: 200px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  border-top: 2px solid #fed700;
+  position: absolute;
+  right: -3px;
+  display: flex;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+header #header_top .container .top_right ul li .globe_content ul {
+  border: 1px solid rgba(223, 219, 219, 0.481);
+  width: 50%;
+  display: inline-block;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+header #header_top .container .top_right ul li .globe_content ul li {
+  margin-left: 0px;
+  margin-top: 5px;
+  padding: 0px 4px;
+  cursor: pointer;
+}
+header #header_top .container .top_right ul li .globe_content ul li:hover {
+  color: #fed700;
+}
+header #header_top .container .top_right ul li .globe_content ul li:nth-child(1) {
+  font-weight: 600;
+}
+header #header_top .container .top_right ul li .globe_content ul li:nth-child(5) {
+  background-color: rgba(184, 179, 179, 0.374);
+}
+header #header_top .container .top_right ul li:hover .globe_content {
+  visibility: visible;
+}
+@media (max-width: 576px) {
+  header #header_mid {
+    display: none;
+  }
+}
 header #header_mid .container {
   padding: 0;
+}
+header #header_mid .container .col-6 form {
+  transform: translateX(120px);
 }
 header #header_mid .container .col-6 form input {
   width: 530px;
@@ -75,4 +127,136 @@ header #header_mid .container .col-6 form button {
   padding: 5px 14px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+header #header_mid .container .col-4 ul {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+header #header_mid .container .col-4 ul li {
+  position: relative;
+  margin-right: 56px;
+}
+header #header_mid .container .col-4 ul li:hover span {
+  margin-bottom: 7px;
+}
+header #header_mid .container .col-4 ul li:hover i {
+  color: #fed700;
+}
+header #header_mid .container .col-4 ul li i {
+  font-size: 25px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+header #header_mid .container .col-4 ul li span {
+  transition: all ease-in-out 0.2s;
+  position: absolute;
+  bottom: -2px;
+  right: -7px;
+  font-size: 14px;
+  background-color: #fed700;
+  border-radius: 50%;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+header #header_mid .container .col-4 ul li p {
+  display: inline-block;
+  position: absolute;
+  right: -52px;
+  top: 5px;
+  font-weight: 600;
+}
+header #header_ftr {
+  padding-top: 20px;
+}
+@media (max-width: 576px) {
+  header #header_ftr {
+    display: none;
+  }
+}
+header #header_ftr .container {
+  padding: 0;
+}
+header #header_ftr .container .col-3 span {
+  background-color: #fed700;
+  border-radius: 10px;
+  display: block;
+  padding: 8px 0px;
+  cursor: pointer;
+}
+header #header_ftr .container .col-3 .department_cntnt {
+  z-index: 1;
+  padding: 0;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+header #header_ftr .container .col-3 .department_cntnt li {
+  margin-top: 5px;
+  border-bottom: 1px solid rgba(189, 186, 186, 0.486);
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  padding: 4px 0px;
+}
+header #header_ftr .container .col-3 .department_cntnt li:hover {
+  background-color: rgba(197, 191, 191, 0.618);
+}
+header #header_ftr .container .col-3 .passive_cntnt {
+  display: none;
+}
+header #header_ftr .container .col-7 ul {
+  display: flex;
+  padding-top: 6px;
+  gap: 16px;
+}
+header #header_ftr .container .col-7 ul li {
+  position: relative;
+}
+header #header_ftr .container .col-7 ul li:nth-child(1) a {
+  color: red;
+}
+header #header_ftr .container .col-7 ul li:nth-child(1) i {
+  color: red;
+}
+header #header_ftr .container .col-7 ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+header #header_ftr .container .col-7 ul li i {
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+header #header_ftr .container .col-7 ul li ul {
+  display: none;
+  flex-direction: column;
+  padding: 10px;
+  border-top: 3px solid #fed700;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: absolute;
+  gap: 4px;
+}
+header #header_ftr .container .col-7 ul li ul li a {
+  color: #333 !important;
+  font-weight: 400;
+  font-size: 15px;
+  transition: all ease-in-out 0.2s;
+}
+header #header_ftr .container .col-7 ul li ul li a:hover {
+  color: #fed700 !important;
+}
+header #header_ftr .container .col-2 span {
+  font-size: 13px;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
