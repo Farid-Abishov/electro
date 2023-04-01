@@ -230,31 +230,63 @@ header #header_ftr .container .col-7 ul li a {
 }
 header #header_ftr .container .col-7 ul li i {
   font-size: 12px;
-  font-weight: 600;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
 }
-header #header_ftr .container .col-7 ul li ul {
-  display: none;
-  flex-direction: column;
+header #header_ftr .container .col-7 ul .home:hover ul {
+  display: block;
+}
+header #header_ftr .container .col-7 ul .home ul {
+  gap: 4px;
   padding: 10px;
+  width: 200px;
+  flex-direction: column;
+  display: none;
   border-top: 3px solid #fed700;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 200px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  z-index: 2;
+  background-color: #fff;
   position: absolute;
-  gap: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  top: 27px;
 }
-header #header_ftr .container .col-7 ul li ul li a {
+header #header_ftr .container .col-7 ul .home ul li a {
   color: #333 !important;
   font-weight: 400;
   font-size: 15px;
   transition: all ease-in-out 0.2s;
 }
-header #header_ftr .container .col-7 ul li ul li a:hover {
+header #header_ftr .container .col-7 ul .home ul li a:hover {
   color: #fed700 !important;
+}
+header #header_ftr .container .col-7 ul .catalog:hover .container {
+  display: block;
+}
+header #header_ftr .container .col-7 ul .catalog .container {
+  display: none;
+  border-top: 3px solid #fed700;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 2;
+  background-color: #fff;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  top: 27px;
+  left: -90px;
+  width: 970px;
+}
+header #header_ftr .container .col-7 ul .catalog .container .col-3 ul {
+  flex-direction: column;
+  gap: 5px;
+}
+header #header_ftr .container .col-7 ul .catalog .container .col-3 ul li {
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+header #header_ftr .container .col-7 ul .catalog .container .col-3 ul li:nth-child(1) {
+  font-weight: 600;
+}
+header #header_ftr .container .col-7 ul .catalog .container .col-3 ul li:hover {
+  color: #fed700;
 }
 header #header_ftr .container .col-2 span {
   font-size: 13px;

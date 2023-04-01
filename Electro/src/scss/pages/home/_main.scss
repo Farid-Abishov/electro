@@ -215,29 +215,29 @@ header{
                         color: red;
                        }
                     }
+                   
                     a{
                         text-decoration: none;
                         color: #333;
                         font-weight: 600;
                     }
                     i{
-                        font-size: 12px;
-                        font-weight: 600;
-                        display: inline-block;
-                        margin: 0;
-                        padding: 0;
+                        font-size: 12px;                        
                     }
+                  
+                }
+                .home{
+                    &:hover{
+                        ul{
+                            display: block;
+                        }
+                    }   
                     ul{
-                        display: none;
-                        flex-direction: column;
-                        padding: 10px;
-                        border-top:3px solid $btn_clr ;
-                        border-bottom-left-radius: 10px;
-                        border-bottom-right-radius: 10px;
-                        width: 200px;
-                        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-                        position: absolute;
                         gap: 4px;
+                        padding: 10px;
+                        width: 200px;
+                        flex-direction: column;
+                        @include nav_cntnt(none,3px solid $btn_clr,10px,10px,2,#fff,absolute,rgba(0, 0, 0, 0.16) 0px 1px 4px,27px);
                         li{
                             a{
                                 color: #333 !important;
@@ -246,6 +246,34 @@ header{
                                 transition: all ease-in-out .2s;
                                 &:hover{
                                     color: $btn_clr !important;
+                                }
+                            }
+                        }
+                    }
+                }
+                .catalog{
+                    &:hover{
+                        .container{
+                            display: block;
+                        }
+                    }   
+                    .container{
+                        @include nav_cntnt(none,3px solid $btn_clr,10px,10px,2,#fff,absolute,rgba(0, 0, 0, 0.16) 0px 1px 4px,27px);
+                        left: -90px;
+                        width: 970px;
+                        .col-3{
+                            ul{
+                                flex-direction: column;
+                                gap: 5px;
+                                li{
+                                    transition: all ease-in-out .3s;
+                                    cursor: pointer;
+                                   &:nth-child(1){
+                                    font-weight: 600;
+                                   } 
+                                   &:hover{
+                                    color: $btn_clr;
+                                   }
                                 }
                             }
                         }

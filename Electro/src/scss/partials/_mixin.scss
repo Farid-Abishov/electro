@@ -1,5 +1,28 @@
-@mixin flex($display, $direction, $justf,  $wrap: null) {
+@mixin flex($display, 
+$direction,
+ $justf, 
+  $wrap: null) {
     display: $display;
     justify-content: $justf;
     flex-direction: $direction;
 }
+@mixin nav_cntnt($display,
+$brdr_top,
+$brdr_btm_left,
+$brdr_btm_right,
+$zindex,
+$bg_clr,
+$pstn,
+$bx_shdw,
+$top){
+display: $display;
+border-top:$brdr_top;
+border-bottom-left-radius: $brdr_btm_left;
+border-bottom-right-radius: $brdr_btm_right;
+z-index: $zindex;
+background-color: $bg_clr;
+position: $pstn;
+box-shadow: $bx_shdw;
+top: $top;
+}
+
