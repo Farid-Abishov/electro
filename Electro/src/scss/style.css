@@ -1,0 +1,53 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Roboto&family=Rubik:wght@300;400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+header #header_top {
+  padding: 5px 0px;
+}
+header #header_top .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0;
+}
+header #header_top .container .top_left {
+  display: inline-block;
+}
+header #header_top .container .top_left ul {
+  display: flex;
+}
+header #header_top .container .top_left ul li {
+  font-size: 14px;
+  margin-right: 10px;
+}
+header #header_top .container .top_left ul li i {
+  color: #fed700;
+}
+header #header_top .container .top_right {
+  display: inline-block;
+}
+header #header_top .container .top_right ul {
+  display: flex;
+}
+header #header_top .container .top_right ul li {
+  font-size: 14px;
+  margin: 0px 10px;
+}
+header #header_top .container .top_right ul li a {
+  text-decoration: none;
+  color: #333;
+}
+header #header_top .container .top_right ul li i {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
