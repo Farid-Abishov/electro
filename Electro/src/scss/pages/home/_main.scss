@@ -159,6 +159,42 @@ header{
                     top: 5px;
                     font-weight: 600;
                  }
+                 .offcanvas-body{
+                    h5{
+                        text-align: center;
+                    }
+                    .icon_box{
+                     display: flex;
+                     justify-content: center;
+                     gap: 20px;
+                        i{
+                            color: #333;
+                            display: flex;
+                            font-size: 16px;
+                            justify-content: center;
+                            align-items: center;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            border: 1px solid gray;
+                            transition: all ease-in-out .3s;
+                            &:hover{
+                                background-color: rgba(50, 50, 160, 0.753);
+                                color: #fff;
+                            }
+                        }
+                    }
+                    button{
+                        background-color: transparent;
+                        border: 1px solid rgba(183, 181, 181, 0.604);
+                        padding: 10px 70px;
+                        border-radius: 20px;
+                        display: block;
+                        margin: 15px auto;
+                        color: rgba(128, 128, 128, 0.719);
+                        font-weight: 600;
+                    }
+                 }
             }
         }
       }
@@ -166,6 +202,7 @@ header{
     }
     #header_ftr{
         padding-top: 10px;
+       
         @media(max-width:576px){
             display: none;
         }
@@ -182,7 +219,7 @@ header{
                 .department_cntnt{
                     position: absolute;
                     width: 310px;
-                    z-index: 1;
+                    z-index: 2;
                     padding: 0;
                     background-color: #fff;
                     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -206,7 +243,7 @@ header{
                         .container{
                             @include nav_cntnt(none,3px solid $btn_clr,10px,10px,2,#fff,absolute,rgba(0, 0, 0, 0.16) 0px 1px 4px,-114px);
                             width: 970px;
-                            left: 315px;
+                            left: 309px;
                             height: 405px;
                         }
 
@@ -440,9 +477,72 @@ header{
         }
     }
 }
-main{
-    button{
-        border: none;
-        background: transparent;
-    }
+
+html,body {
+  position: relative;
+  height: 100%;
+  
 }
+
+
+.swiper {
+  width: 100%;
+  height: 60vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container{ 
+    height: 100%;
+    .col-6{
+       img{
+        width: 100%;
+       height: 100%;
+      object-fit: cover; 
+       }
+    }
+    .col-6{
+        .slider_cntnt{
+            padding-top: 40px;
+            h5{
+                max-width: 303px;
+                font-size: 55px;
+                text-align: center;
+                margin: 0 auto;
+                color: $slider_txt_clr;
+            }
+            .slider_txt{
+                max-width: 280px;
+                margin: 0 auto;
+                font-size: 14px;
+                font-weight: 600;
+                color: $slider_txt_clr;
+                text-align: left;
+            }
+            .price{
+                font-size: 45px;
+                font-weight: 600;
+                color: $slider_txt_clr;
+            }
+            button{
+                background-color: $btn_clr;
+                border: none;
+                color: #333;
+                padding: 10px 48px;
+                border-radius: 14px;
+                transition: all ease-in-out .3s;
+                &:hover{
+                    background-color:$slider_txt_clr; 
+                    color: #fff;
+                }
+            }
+           }
+    }
+  }
+}
+
