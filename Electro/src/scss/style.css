@@ -746,6 +746,106 @@ html, body {
   margin: 6px;
 }
 
+#bestdeals {
+  background-color: #f9f9f9;
+  padding-bottom: 100px;
+}
+#bestdeals .container .row {
+  margin: 0;
+  padding: 0;
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt {
+  background-color: #fff;
+  padding: 5px;
+  overflow: hidden;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt:hover {
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt:hover .right_ftr i {
+  background-color: #fed700;
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt:hover .right_btm {
+  transform: translateY(10px);
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt .right_txt p {
+  margin: 0;
+  font-size: 12px;
+  color: rgba(158, 155, 155, 0.944);
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt .right_txt p:hover {
+  color: #fed700;
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt .right_txt span {
+  color: #0062bd;
+  font-weight: 600;
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt .right_txt span:hover {
+  color: #fed700;
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt .right_img a {
+  display: block;
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt .right_img a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt .right_ftr {
+  margin-top: 5px;
+  display: flex;
+  gap: 15px;
+}
+@media (max-width: 576px) {
+  #bestdeals .container .row .col-xl-4 .col-6 .right_cntnt .right_ftr {
+    gap: 7px;
+  }
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt .right_ftr i {
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(202, 198, 198, 0.637);
+  color: #fff;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt .right_ftr span:nth-child(1) {
+  color: red;
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt .right_ftr span:nth-child(2) {
+  font-size: 13px;
+  color: rgb(164, 161, 161);
+  text-decoration: line-through;
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt .right_btm {
+  transition: all ease-in-out 0.3s;
+  transform: translateY(48px);
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt .right_btm ul {
+  display: flex;
+  gap: 15px;
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt .right_btm ul li {
+  transition: all ease-in-out 0.2s;
+  font-size: 13px;
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt .right_btm ul li:hover {
+  color: #fed700;
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt .right_btm ul li i {
+  font-size: 13px;
+}
+#bestdeals .container .row .col-xl-4 .col-6 .right_cntnt .right_btm hr {
+  margin: 6px;
+}
+
 #header_ftr .col-7 ul {
   display: flex;
   padding-top: 6px;
