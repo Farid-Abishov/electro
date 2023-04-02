@@ -274,7 +274,7 @@ html,body {
   width: 100%;
   height: 60vh;
   @media(max-width:576px){
-   height: 50vh;
+   height: 40vh;
      
    }
 }
@@ -303,6 +303,9 @@ html,body {
         height: 100%;
         .slider_cntnt{
             padding-top: 40px;
+            @media(max-width:576px){
+                padding-top: 14px;
+               }
             .cntnt_title{
                 max-width: 303px;
                 font-size: 55px;
@@ -333,7 +336,7 @@ html,body {
             }
             button{
                 @media(max-width:576px){
-                    padding: 10px 22px;
+                    padding: 6px 14px;
                     }
                 background-color: $btn_clr;
                 border: none;
@@ -355,6 +358,9 @@ html,body {
     .container{
         .col-6{
            .slider_cntnt{
+            @media(max-width:576px){
+                padding-top:12px;
+                }
             h5{
                 font-weight: 700;
                 color: #34bcec;
@@ -383,9 +389,8 @@ html,body {
                     background-color:$slider_txt_clr; 
                     color: #fff;
                 }
-                @media(max-width:576px){
-                     
-                    padding: 10px 22px;
+                 @media(max-width:576px){
+                    padding: 6px 14px;
                     }
             }
            }
@@ -420,7 +425,12 @@ html,body {
 #img_items{
     padding-top: 40px;
     padding-bottom: 20px;
+    @media(max-width:576px){
+       
+        padding-top: 15px;
+        }
     .container{
+        padding: 0;
         .row{
             .col-xl-3{
                .img{

@@ -284,7 +284,7 @@ html, body {
 }
 @media (max-width: 576px) {
   .swiper {
-    height: 50vh;
+    height: 40vh;
   }
 }
 
@@ -316,6 +316,11 @@ html, body {
 }
 .swiper-slide .container .row .col-6 .slider_cntnt {
   padding-top: 40px;
+}
+@media (max-width: 576px) {
+  .swiper-slide .container .row .col-6 .slider_cntnt {
+    padding-top: 14px;
+  }
 }
 .swiper-slide .container .row .col-6 .slider_cntnt .cntnt_title {
   max-width: 303px;
@@ -358,7 +363,7 @@ html, body {
 }
 @media (max-width: 576px) {
   .swiper-slide .container .row .col-6 button {
-    padding: 10px 22px;
+    padding: 6px 14px;
   }
 }
 .swiper-slide .container .row .col-6 button:hover {
@@ -366,6 +371,11 @@ html, body {
   color: #fff;
 }
 
+@media (max-width: 576px) {
+  .swiper-slider2 .container .col-6 .slider_cntnt {
+    padding-top: 12px;
+  }
+}
 .swiper-slider2 .container .col-6 .slider_cntnt h5 {
   font-weight: 700;
   color: #34bcec;
@@ -398,7 +408,7 @@ html, body {
 }
 @media (max-width: 576px) {
   .swiper-slider2 .container .col-6 .slider_cntnt button {
-    padding: 10px 22px;
+    padding: 6px 14px;
   }
 }
 
@@ -426,6 +436,14 @@ html, body {
 #img_items {
   padding-top: 40px;
   padding-bottom: 20px;
+}
+@media (max-width: 576px) {
+  #img_items {
+    padding-top: 15px;
+  }
+}
+#img_items .container {
+  padding: 0;
 }
 #img_items .container .row .col-xl-3 .img {
   position: relative;
