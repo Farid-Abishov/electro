@@ -995,6 +995,11 @@ html, body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 576px) {
+  #bestseller .container .bestseller_title {
+    display: none;
+  }
+}
 #bestseller .container .bestseller_title span {
   font-weight: 600;
   font-size: 20px;
@@ -1017,6 +1022,14 @@ html, body {
   border: 2px solid #fed700;
   border-radius: 10px;
   padding: 0px 10px;
+}
+
+#advertising {
+  padding-bottom: 60px;
+}
+#advertising .container {
+  height: 18vh;
+  background-position: center;
 }
 
 #header_ftr .col-7 ul {

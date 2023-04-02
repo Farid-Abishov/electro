@@ -1021,6 +1021,9 @@ html,body {
           }  
         }
         .bestseller_title{
+            @media(max-width:576px){
+                display: none;
+            }
             padding-top: 20px;
             display: flex;
             justify-content: space-between;
@@ -1049,4 +1052,11 @@ html,body {
             }
         }
     }
+}
+#advertising{
+    padding-bottom: 60px;
+   .container{
+    height: 18vh;
+    background-position: center;
+   }
 }
