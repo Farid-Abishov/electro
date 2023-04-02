@@ -537,6 +537,7 @@ html, body {
   margin: 0;
 }
 #third .container .row .col-xl-4 .third_left {
+  height: 100%;
   padding: 10px 5px;
   border-radius: 22px;
   border: 2px solid #fed700;
@@ -546,6 +547,12 @@ html, body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+#third .container .row .col-xl-4 .third_left .third_left_bottom h5 {
+  text-align: center;
+  color: #0062bd;
+  font-weight: 600;
+  font-size: 15px;
 }
 #third .container .row .col-xl-8 .container .right_side_title {
   display: flex;
@@ -577,6 +584,7 @@ html, body {
 }
 #third .container .row .col-xl-8 .container .row .col-xl-3 .right_cntnt .right_txt p {
   margin: 0;
+  font-size: 12px;
   color: rgba(158, 155, 155, 0.944);
 }
 #third .container .row .col-xl-8 .container .row .col-xl-3 .right_cntnt .right_txt p:hover {
@@ -584,7 +592,7 @@ html, body {
 }
 #third .container .row .col-xl-8 .container .row .col-xl-3 .right_cntnt .right_txt span {
   color: #0062bd;
-  font-weight: 500;
+  font-weight: 600;
 }
 #third .container .row .col-xl-8 .container .row .col-xl-3 .right_cntnt .right_txt span:hover {
   color: #fed700;
@@ -599,6 +607,7 @@ html, body {
      object-fit: cover;
 }
 #third .container .row .col-xl-8 .container .row .col-xl-3 .right_cntnt .right_ftr {
+  margin-top: 5px;
   display: flex;
   gap: 15px;
 }
@@ -607,7 +616,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(202, 198, 198);
+  background-color: rgba(202, 198, 198, 0.637);
   color: #fff;
   border-radius: 50%;
   width: 35px;
@@ -617,6 +626,7 @@ html, body {
   color: red;
 }
 #third .container .row .col-xl-8 .container .row .col-xl-3 .right_cntnt .right_ftr span:nth-child(2) {
+  font-size: 13px;
   color: rgb(164, 161, 161);
   text-decoration: line-through;
 }
