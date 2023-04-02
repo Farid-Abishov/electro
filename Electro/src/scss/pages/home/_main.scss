@@ -88,6 +88,7 @@ header{
         }
     }
     #header_mid{
+        z-index: 2;
         padding: 8px 0px;
         @media(max-width:576px){
             display: none;
@@ -289,6 +290,7 @@ header{
                         gap: 10px;
                         li{
                             i{
+                                color: $slider_txt_clr;
                                 font-weight: 600;
                             }
                         }
@@ -756,7 +758,7 @@ html,body {
 //bestdeals sec
 #bestdeals{
     background-color: #f9f9f9;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
     .container{
         .row{
             margin: 0;
@@ -865,13 +867,22 @@ html,body {
         }
     }
 }
-
 //beasrdeals slider
-
+.sa{
+    // overflow: hidden;
+    height: 100%;
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+        border-radius: 10px;
+        transition: all ease-in-out .3s;  
+    }
+}
   .swiper {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    background-color: #fff;
+   
   }
 
   .swiper-slide {
@@ -892,8 +903,8 @@ html,body {
 
   .mySwiper .swiper-slide {
     width: 25%;
-    height: 100%;
-    opacity: 0.4;
+    height: 90%;
+    opacity: 0.6;
   }
 
   .mySwiper .swiper-slide-thumb-active {
@@ -906,3 +917,70 @@ html,body {
     height: 100%;
     object-fit: cover;
   }
+//bestseller section
+#bestseller{
+    .container{
+        padding: 0;
+        .row{
+          .col-xl-4{
+            .bestseller_item{
+                transition: all ease-in-out .3s;
+                &:hover{
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+                    border-radius: 10px;
+                }
+                .col-5{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .col-7{
+                    &:hover{
+                       .best_right_ftr{
+                        i{
+                            background-color: $btn_clr;
+                        }
+                       }
+                    }
+                    p{
+                        margin: 0;
+                        color: rgba(176, 174, 174, 0.907);
+                    }
+                    span{
+                        color:$card_txt_clr;
+                        font-weight: 600;
+                    }
+                    .best_right_ftr{
+                        display: flex;
+                        gap: 18px;
+                        transform: translateY(55px);
+                        span{
+                            &:nth-child(1){
+                                color: red;
+                            }
+                            &:nth-child(2){
+                                color: gray;
+                                font-size: 14px;
+                                text-decoration: line-through;
+                            }
+                        }
+                        i{
+                            transition: all ease-in-out .3s;
+                            background-color: rgb(171, 168, 168);
+                            color: #fff;
+                            display:flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                }
+            }
+          }  
+        }
+    }
+}
