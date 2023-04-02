@@ -919,16 +919,24 @@ html,body {
   }
 //bestseller section
 #bestseller{
+    padding-bottom: 50px;
     .container{
         padding: 0;
         .row{
+            margin: 0;
           .col-xl-4{
             .bestseller_item{
+                overflow: hidden;
                 transition: all ease-in-out .3s;
                 &:hover{
                     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
                     border-radius: 10px;
+                    .best_item_ftr{
+                        transform: translateY(10px);
+                    }
                 }
+               .row{
+                margin: 0;
                 .col-5{
                     img{
                         width: 100%;
@@ -945,6 +953,7 @@ html,body {
                        }
                     }
                     p{
+                        font-size: 14px;
                         margin: 0;
                         color: rgba(176, 174, 174, 0.907);
                     }
@@ -956,19 +965,26 @@ html,body {
                         display: flex;
                         gap: 18px;
                         transform: translateY(55px);
+                        @media(max-width:576px){
+                            gap: 5px;
+                            transform: translateY(25px);
+                        }
                         span{
+                           
                             &:nth-child(1){
                                 color: red;
+                                font-weight: 400;
                             }
                             &:nth-child(2){
-                                color: gray;
+                                color: rgb(175, 172, 172);
                                 font-size: 14px;
+                                font-weight: 400;
                                 text-decoration: line-through;
                             }
                         }
                         i{
                             transition: all ease-in-out .3s;
-                            background-color: rgb(171, 168, 168);
+                            background-color: rgba(195, 193, 193, 0.582);
                             color: #fff;
                             display:flex;
                             justify-content: center;
@@ -976,6 +992,27 @@ html,body {
                             border-radius: 50%;
                             width: 35px;
                             height: 35px;
+                        }
+                    }
+                }
+               }
+                .best_item_ftr{
+                   
+                    padding: 0px 8px;
+                    transform: translateY(46px);
+                    transition: all ease-in-out .3s;
+                    ul{
+                        display: flex;
+                        justify-content: end;
+                        gap: 12px;
+                      
+                        li{
+                            font-size: 14px;
+                            color: rgb(166, 161, 161);
+                            &:hover{
+                                color: $btn_clr;
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
