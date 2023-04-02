@@ -10,3 +10,4 @@ var swiper = new Swiper(".slider", {
       prevEl: ".swiper-button-prev",
     },
   });
+
