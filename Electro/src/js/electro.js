@@ -10,4 +10,20 @@ var swiper = new Swiper(".slider", {
       prevEl: ".swiper-button-prev",
     },
   });
+//totop and fixed navbar
+const Totop=document.querySelector(".to-top");
+var navfix=document.querySelector("#header_mid");
+Totop&&Totop.addEventListener("click", () =>{
+   window.scrollTo({ top: 0, behavior: "smooth" });
+})
 
+window.addEventListener("scroll",()=>{
+   if(window.scrollY>500){
+      Totop.style.display="flex";
+      navfix.classList.add("active_nav")
+   }
+   else{
+      Totop.style.display="none";
+      navfix.classList.remove("active_nav")
+   }
+})
