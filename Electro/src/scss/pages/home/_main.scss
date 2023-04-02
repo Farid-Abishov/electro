@@ -963,7 +963,8 @@ html,body {
                     }
                     .best_right_ftr{
                         display: flex;
-                        gap: 18px;
+                        justify-content: space-between;
+                        gap: 10px;
                         transform: translateY(55px);
                         @media(max-width:576px){
                             gap: 5px;
@@ -1018,6 +1019,34 @@ html,body {
                 }
             }
           }  
+        }
+        .bestseller_title{
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            span{
+                font-weight: 600;
+                font-size: 20px;
+            }
+            ul{
+                display: flex;
+                gap: 16px;
+                li{
+                    cursor: pointer;
+                    border-radius: 14px;
+                    padding: 1px 10px; 
+                    border: 2px solid transparent; 
+                    transition: all ease-in-out .3s;
+                    &:hover{
+                        border: 2px solid $btn_clr;
+                    }
+                 &:nth-child(1){
+                    border: 2px solid $btn_clr;
+                    border-radius: 10px;
+                    padding: 0px 10px;
+                 }
+                }
+            }
         }
     }
 }

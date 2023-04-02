@@ -941,7 +941,8 @@ html, body {
 }
 #bestseller .container .row .col-xl-4 .bestseller_item .row .col-7 .best_right_ftr {
   display: flex;
-  gap: 18px;
+  justify-content: space-between;
+  gap: 10px;
   transform: translateY(55px);
 }
 @media (max-width: 576px) {
@@ -988,6 +989,34 @@ html, body {
 #bestseller .container .row .col-xl-4 .bestseller_item .best_item_ftr ul li:hover {
   color: #fed700;
   cursor: pointer;
+}
+#bestseller .container .bestseller_title {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#bestseller .container .bestseller_title span {
+  font-weight: 600;
+  font-size: 20px;
+}
+#bestseller .container .bestseller_title ul {
+  display: flex;
+  gap: 16px;
+}
+#bestseller .container .bestseller_title ul li {
+  cursor: pointer;
+  border-radius: 14px;
+  padding: 1px 10px;
+  border: 2px solid transparent;
+  transition: all ease-in-out 0.3s;
+}
+#bestseller .container .bestseller_title ul li:hover {
+  border: 2px solid #fed700;
+}
+#bestseller .container .bestseller_title ul li:nth-child(1) {
+  border: 2px solid #fed700;
+  border-radius: 10px;
+  padding: 0px 10px;
 }
 
 #header_ftr .col-7 ul {
