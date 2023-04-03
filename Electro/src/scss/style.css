@@ -1190,6 +1190,68 @@ html, body {
   text-decoration: line-through;
 }
 
+#newsletter {
+  background-color: #fed700;
+  padding: 20px 0px;
+}
+#newsletter .container {
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 576px) {
+  #newsletter .container {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
+#newsletter .container p {
+  margin: 0;
+  display: inline-block;
+}
+@media (max-width: 576px) {
+  #newsletter .container span {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  #newsletter .container .newsform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+#newsletter .container .newsform input {
+  border: none;
+  border-radius: 18px;
+  padding: 10px 70px;
+  display: inline-block;
+}
+@media (max-width: 576px) {
+  #newsletter .container .newsform input {
+    padding: 10px 27px;
+  }
+}
+#newsletter .container .newsform button {
+  padding: 10px 15px;
+  border: none;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  background-color: #333e48;
+  color: #fff;
+  transform: translateX(-20px);
+}
+@media (max-width: 576px) {
+  #newsletter .container .newsform button {
+    transform: translateX(0px);
+    border-radius: 18px;
+    padding: 10px 100px;
+  }
+}
+
 #header_ftr .col-7 ul {
   display: flex;
   padding-top: 6px;

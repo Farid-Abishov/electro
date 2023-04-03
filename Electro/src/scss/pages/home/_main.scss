@@ -1235,3 +1235,59 @@ html,body {
         }
     }
 }
+//newsletter section
+#newsletter{
+    background-color: $btn_clr;
+    padding: 20px 0px;
+    .container{
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 576px){
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+           }
+        p{
+            margin: 0;
+            display: inline-block;
+        }
+        span{
+            @media(max-width: 576px){
+             display: none;
+            }
+        }
+        .newsform{
+              @media(max-width:576px){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+              }
+            input{
+                border: none;
+                border-radius: 18px;
+                padding: 10px 70px;
+                display: inline-block;
+                @media(max-width:576px){
+                    padding: 10px 27px;
+                  }
+            }
+            button{
+                padding: 10px 15px;
+                border: none;
+                border-top-right-radius: 18px;
+                border-bottom-right-radius: 18px;
+                background-color:#333e48;
+                color: #fff;
+                transform: translateX(-20px);
+                @media(max-width: 576px){
+                    transform: translateX(0px);
+                    border-radius: 18px;
+                    padding: 10px 100px;
+                   }
+            }
+        }
+    }
+}
