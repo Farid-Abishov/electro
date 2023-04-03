@@ -229,7 +229,7 @@ header #header_ftr .container .col-3 span {
 header #header_ftr .container .col-3 .department_cntnt {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding: 5px 10px;
+  padding: 5px !important;
   position: absolute;
   width: 310px;
   z-index: 2;
@@ -266,7 +266,7 @@ header #header_ftr .container .col-3 .department_cntnt li .container {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   top: -114px;
   width: 970px;
-  left: 309px;
+  left: 305px;
   height: 405px;
 }
 header #header_ftr .container .col-3 .passive_cntnt {
