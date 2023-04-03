@@ -1177,3 +1177,61 @@ html,body {
         }
     }
 }
+//shopify section
+#shopify{
+    padding-bottom: 50px;
+    .container{
+        padding: 0;
+        .row{
+            margin: 0;
+            .col-xl-3{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+             .shopify_title{
+                padding: 13px 15px;
+                .progress{
+                    height: 2px;
+                }
+             }
+             .row{
+                margin: 0;
+                .col-12{
+                    .row{
+                        margin: 0;
+                        .col-5{
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        .col-7{
+                            .shopify_cntxt{
+                                p{
+                                    font-size: 12px;
+                                    margin-bottom: 6px;
+                                    color: $card_txt_clr;
+                                    &:hover{
+                                        color: $btn_clr;
+                                    }
+                                }   
+                               span{
+                                color: red;
+                                &:nth-child(2){
+                                    color: rgb(143, 140, 140);
+                                    text-decoration: line-through;
+                                }
+                               }
+                            }
+                           
+                        }
+                    }
+                }
+             }
+            }
+        }
+    }
+}

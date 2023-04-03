@@ -1141,6 +1141,55 @@ html, body {
   display: inline-block;
 }
 
+#shopify {
+  padding-bottom: 50px;
+}
+#shopify .container {
+  padding: 0;
+}
+#shopify .container .row {
+  margin: 0;
+}
+#shopify .container .row .col-xl-3 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#shopify .container .row .col-xl-3 .shopify_title {
+  padding: 13px 15px;
+}
+#shopify .container .row .col-xl-3 .shopify_title .progress {
+  height: 2px;
+}
+#shopify .container .row .col-xl-3 .row {
+  margin: 0;
+}
+#shopify .container .row .col-xl-3 .row .col-12 .row {
+  margin: 0;
+}
+#shopify .container .row .col-xl-3 .row .col-12 .row .col-5 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#shopify .container .row .col-xl-3 .row .col-12 .row .col-7 .shopify_cntxt p {
+  font-size: 12px;
+  margin-bottom: 6px;
+  color: #0062bd;
+}
+#shopify .container .row .col-xl-3 .row .col-12 .row .col-7 .shopify_cntxt p:hover {
+  color: #fed700;
+}
+#shopify .container .row .col-xl-3 .row .col-12 .row .col-7 .shopify_cntxt span {
+  color: red;
+}
+#shopify .container .row .col-xl-3 .row .col-12 .row .col-7 .shopify_cntxt span:nth-child(2) {
+  color: rgb(143, 140, 140);
+  text-decoration: line-through;
+}
+
 #header_ftr .col-7 ul {
   display: flex;
   padding-top: 6px;
