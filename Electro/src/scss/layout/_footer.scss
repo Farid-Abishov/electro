@@ -1,0 +1,19 @@
+footer{
+ .container{
+    padding: 0;
+    .row{
+        margin: 0;
+        .col-xl-4{
+
+        }
+        .col-xl-8{
+            .row{
+                margin: 0;
+                .col-xl-3{
+                    
+                }
+            }
+        }
+    }
+ }
+}

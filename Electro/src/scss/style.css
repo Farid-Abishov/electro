@@ -1448,4 +1448,14 @@ html, body {
 }
 #header_ftr .col-7 ul .feature span {
   background-color: rgb(236, 19, 19);
+}
+
+footer .container {
+  padding: 0;
+}
+footer .container .row {
+  margin: 0;
+}
+footer .container .row .col-xl-8 .row {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
