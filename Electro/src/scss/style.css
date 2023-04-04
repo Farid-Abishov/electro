@@ -958,7 +958,7 @@ html, body {
 
 .mySwiper .swiper-slide {
   width: 25%;
-  height: 90%;
+  height: 100%;
   opacity: 0.6;
 }
 
@@ -1330,6 +1330,167 @@ html, body {
 }
 #markslide .Mwiper {
   overflow-x: hidden;
+}
+
+#faxtex {
+  padding: 60px 0px;
+}
+#faxtex .container {
+  padding: 0;
+}
+#faxtex .container .row {
+  margin: 0;
+}
+#faxtex .container .row .col-xl-9 .row {
+  margin: 0;
+}
+#faxtex .container .row .col-xl-9 .row .col-xl-6 .faxtex_item h5 {
+  font-size: 14px;
+  color: rgb(141, 136, 136);
+}
+#faxtex .container .row .col-xl-9 .row .col-xl-6 .faxtex_item span {
+  font-size: 22px;
+  font-weight: 500;
+}
+#faxtex .container .row .col-xl-9 .row .col-xl-6 .faxtex_item .faxicon_box i {
+  color: #fed700;
+  margin-right: 2px;
+}
+#faxtex .container .row .col-xl-9 .row .col-xl-6 .faxtex_item .faxtex_links a {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 3px 10px;
+}
+#faxtex .container .row .col-xl-9 .row .col-xl-6 .faxtex_item .faxtex_links a:hover {
+  opacity: 0.8;
+}
+#faxtex .container .row .col-xl-9 .row .col-xl-6 .faxtex_item .faxtex_links a:nth-child(1) {
+  background-color: rgb(36, 36, 98);
+}
+#faxtex .container .row .col-xl-9 .row .col-xl-6 .faxtex_item .faxtex_links a:nth-child(2) {
+  background-color: rgb(23, 124, 232);
+}
+#faxtex .container .row .col-xl-9 .row .col-xl-6 .faxtex_item .faxtex_list {
+  margin-top: 5px;
+}
+#faxtex .container .row .col-xl-9 .row .col-xl-6 .faxtex_item .faxtex_list ul {
+  padding: 0;
+}
+#faxtex .container .row .col-xl-9 .row .col-xl-6 .faxtex_item .faxtex_list ul li {
+  list-style-type: disc !important;
+  color: gray;
+  margin-bottom: 5px;
+}
+#faxtex .container .row .col-xl-9 .row .col-xl-6 .faxtex_item .faxtex_ftr span {
+  font-size: 14px;
+}
+#faxtex .container .row .col-xl-9 .row .col-xl-6 .faxtex_item .faxtex_ftr p {
+  margin: 0;
+}
+#faxtex .container .row .col-xl-9 .row .col-xl-6 .faxtex_item .faxtex_ftr p span {
+  font-weight: 600;
+}
+#faxtex .container .row .col-xl-9 .row .col-xl-6 .faxtex_item .faxtex_ftr h6 span {
+  color: #fed700;
+  font-weight: 600;
+}
+#faxtex .container .row .col-xl-3 .card_item {
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(189, 187, 187, 0.793);
+  border-radius: 15px;
+}
+#faxtex .container .row .col-xl-3 .card_item p {
+  font-size: 14px;
+  margin: 0;
+}
+#faxtex .container .row .col-xl-3 .card_item p span {
+  color: green;
+  font-weight: 600;
+}
+#faxtex .container .row .col-xl-3 .card_item h5 {
+  font-size: 30px;
+  color: cartprice_color;
+}
+#faxtex .container .row .col-xl-3 .card_item h6 {
+  color: rgb(161, 157, 157);
+  text-decoration: line-through;
+}
+#faxtex .container .row .col-xl-3 .card_item .size {
+  margin-top: 20px;
+}
+#faxtex .container .row .col-xl-3 .card_item .size p {
+  margin-bottom: 6px;
+}
+#faxtex .container .row .col-xl-3 .card_item .size .sizes {
+  display: flex;
+  gap: 4px;
+}
+#faxtex .container .row .col-xl-3 .card_item .size .sizes span {
+  font-weight: 600;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(200, 194, 194);
+  border-radius: 50%;
+  transition: all ease-in-out 0.2s;
+}
+#faxtex .container .row .col-xl-3 .card_item .color {
+  margin-top: 20px;
+}
+#faxtex .container .row .col-xl-3 .card_item .color p {
+  color: #333e48;
+}
+#faxtex .container .row .col-xl-3 .card_item .color .colors {
+  display: flex;
+  gap: 4px;
+}
+#faxtex .container .row .col-xl-3 .card_item .color .colors span {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 50%;
+}
+#faxtex .container .row .col-xl-3 .card_item .color .colors span:nth-child(1) {
+  background-color: blue;
+}
+#faxtex .container .row .col-xl-3 .card_item .color .colors span:nth-child(2) {
+  background-color: black;
+}
+#faxtex .container .row .col-xl-3 .card_item .color .colors span:nth-child(3) {
+  background-color: red;
+}
+#faxtex .container .row .col-xl-3 .card_item .color .colors span:nth-child(4) {
+  background-color: yellow;
+}
+#faxtex .container .row .col-xl-3 .card_item .quantity {
+  margin-top: 15px;
+}
+#faxtex .container .row .col-xl-3 .card_item .quantity span {
+  color: #333e48;
+}
+#faxtex .container .row .col-xl-3 .card_item .quantity .quantity_item {
+  display: flex;
+  border-radius: 18px;
+  padding: 5px 10px;
+  width: 120px;
+  border: 1px solid rgb(170, 165, 165);
+  gap: 6px;
+}
+#faxtex .container .row .col-xl-3 .card_item .quantity .quantity_item button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(205, 199, 199);
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
 }
 
 #header_ftr .col-7 ul {
