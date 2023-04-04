@@ -758,7 +758,7 @@ html,body {
         }
     }
 }
-//bestdeals sec
+//bestdeals section
 #bestdeals{
     background-color: $bestdealbg;
     padding-bottom: 60px;
@@ -870,7 +870,7 @@ html,body {
         }
     }
 }
-//beasrdeals slider
+//beastdeals slider
 .sa{
     // overflow: hidden;
     height: 100%;
@@ -1289,5 +1289,11 @@ html,body {
                    }
             }
         }
+    }
+}
+#markslide{
+    padding: 30px 0px;
+    .Mwiper{
+        overflow-x: hidden;
     }
 }

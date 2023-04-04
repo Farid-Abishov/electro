@@ -1252,6 +1252,13 @@ html, body {
   }
 }
 
+#markslide {
+  padding: 30px 0px;
+}
+#markslide .Mwiper {
+  overflow-x: hidden;
+}
+
 #header_ftr .col-7 ul {
   display: flex;
   padding-top: 6px;

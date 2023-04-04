@@ -1,3 +1,4 @@
+//show department content
 var Depart_title=document.querySelector(".depart_title");
 var Department_cntnt=document.querySelector(".department_cntnt");
 
@@ -45,3 +46,26 @@ var swiper = new Swiper(".mySwiper", {
    },
  });
 
+//mark slider
+var Mwiper = new Swiper(".markslider", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    240: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 6,
+      spaceBetween: 50,
+    },
+  },
+});
