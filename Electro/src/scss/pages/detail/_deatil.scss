@@ -171,6 +171,39 @@
                             }
                         }
                     }
+                    .item_btns{
+                        margin-top: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        button{
+                            display: block;
+                            border: none;
+                            width: 240px;
+                            border-radius: 15px;
+                            padding: 12px 20px;
+                            margin-top: 10px;
+                            font-size: 13px;
+                            transition: all ease-in-out .3s;
+                            font-weight: 600;
+                            &:nth-child(1){
+                                background-color: $btn_clr;
+                                color: #fff;
+                                &:hover{
+                                    background-color: $slider_txt_clr;
+                                    color: #fff;
+                                }
+                            }
+                            &:nth-child(2){
+                                background-color: $slider_txt_clr;
+                                color: #fff;
+                                &:hover{
+                                    background-color:$btn_clr;
+                                    color: $slider_txt_clr;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

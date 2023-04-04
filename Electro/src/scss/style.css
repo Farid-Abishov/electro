@@ -1492,6 +1492,39 @@ html, body {
   width: 20px;
   height: 20px;
 }
+#faxtex .container .row .col-xl-3 .card_item .item_btns {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#faxtex .container .row .col-xl-3 .card_item .item_btns button {
+  display: block;
+  border: none;
+  width: 240px;
+  border-radius: 15px;
+  padding: 12px 20px;
+  margin-top: 10px;
+  font-size: 13px;
+  transition: all ease-in-out 0.3s;
+  font-weight: 600;
+}
+#faxtex .container .row .col-xl-3 .card_item .item_btns button:nth-child(1) {
+  background-color: #fed700;
+  color: #fff;
+}
+#faxtex .container .row .col-xl-3 .card_item .item_btns button:nth-child(1):hover {
+  background-color: #333e48;
+  color: #fff;
+}
+#faxtex .container .row .col-xl-3 .card_item .item_btns button:nth-child(2) {
+  background-color: #333e48;
+  color: #fff;
+}
+#faxtex .container .row .col-xl-3 .card_item .item_btns button:nth-child(2):hover {
+  background-color: #fed700;
+  color: #333e48;
+}
 
 #header_ftr .col-7 ul {
   display: flex;
