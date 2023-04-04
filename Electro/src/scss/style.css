@@ -354,10 +354,6 @@ header #mob_nav .mob_nav_container .mob_icons ul li i {
   height: 20px;
 }
 
-body {
-  height: 200vh;
-}
-
 html, body {
   position: relative;
   height: 100%;
