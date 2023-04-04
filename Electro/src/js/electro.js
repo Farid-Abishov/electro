@@ -69,3 +69,5 @@ var Mwiper = new Swiper(".markslider", {
     },
   },
 });
+
+//increment and decrement number

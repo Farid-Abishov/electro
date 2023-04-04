@@ -1457,12 +1457,107 @@ html, body {
   background-color: rgb(236, 19, 19);
 }
 
+footer {
+  background-color: rgba(239, 236, 236, 0.8039215686);
+  padding-top: 100px;
+}
 footer .container {
   padding: 0;
 }
 footer .container .row {
   margin: 0;
 }
+footer .container .row .col-xl-4 .ftr_number {
+  padding: 14px 0px;
+  margin-top: 10px;
+}
+footer .container .row .col-xl-4 .ftr_number svg {
+  fill: #fed700;
+}
+footer .container .row .col-xl-4 .ftr_number span {
+  font-size: 14px;
+  color: #333e48;
+}
+footer .container .row .col-xl-4 .ftr_number p {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  color: #333e48;
+}
+footer .container .row .col-xl-4 .ftr_icon {
+  margin-top: 10px;
+  display: flex;
+  gap: 18px;
+}
+footer .container .row .col-xl-4 .ftr_icon i {
+  cursor: pointer;
+  font-size: 20px;
+  display: inline-block;
+  color: #333e48;
+}
+footer .container .row .col-xl-4 .ftr_icon i:hover {
+  color: rgb(181, 25, 25);
+}
 footer .container .row .col-xl-8 .row {
   margin: 0;
+}
+footer .container .row .col-xl-8 .row .col-xl-3 h5 {
+  color: #333e48;
+  font-weight: 600;
+}
+footer .container .row .col-xl-8 .row .col-xl-3 ul {
+  padding: 0;
+}
+footer .container .row .col-xl-8 .row .col-xl-3 ul li {
+  margin-bottom: 1px;
+}
+footer .container .row .col-xl-8 .row .col-xl-3 ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333e48;
+  transition: all ease-in-out 0.2s;
+}
+footer .container .row .col-xl-8 .row .col-xl-3 ul li a:hover {
+  font-weight: 600;
+  color: rgb(168, 20, 20);
+  font-size: 17px;
+}
+footer .copyright {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 576px) {
+  footer .copyright {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 17px;
+    padding-right: 17px;
+    justify-content: center;
+  }
+}
+footer .copyright .copyright_left {
+  display: inline-block;
+}
+footer .copyright .copyright_left span {
+  color: #333e48;
+}
+@media (max-width: 576px) {
+  footer .copyright .copyright_left span {
+    font-size: 14px;
+  }
+}
+footer .copyright .copyright_right {
+  display: inline-block;
+}
+footer .copyright .copyright_right ul {
+  padding: 0;
+  display: flex;
+  gap: 5px;
+}
+@media (max-width: 576px) {
+  footer .copyright .copyright_right ul {
+    gap: 1px;
+    justify-content: start;
+  }
 }/*# sourceMappingURL=style.css.map */

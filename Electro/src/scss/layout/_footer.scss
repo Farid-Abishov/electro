@@ -1,17 +1,105 @@
 footer{
+    background-color: #efececcd;
+    padding-top: 100px;
  .container{
     padding: 0;
     .row{
         margin: 0;
         .col-xl-4{
-
+            .ftr_number{
+                padding: 14px 0px;
+                margin-top: 10px;
+                svg{
+                    fill: $btn_clr;
+                }
+                span{
+                    font-size: 14px;
+                    color: $slider_txt_clr;
+                }
+                p{
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin: 0;
+                    color: $slider_txt_clr;
+                }
+            }
+            .ftr_icon{
+                margin-top: 10px;
+                display: flex;
+                gap: 18px;
+                i{
+                    cursor: pointer;
+                    font-size: 20px;
+                    display: inline-block;
+                    color: $slider_txt_clr;
+                    &:hover{
+                        color: rgb(181, 25, 25);
+                    }
+                }
+            }
         }
         .col-xl-8{
             .row{
                 margin: 0;
                 .col-xl-3{
-                    
+                    h5{
+                     color: $slider_txt_clr;
+                     font-weight: 600;
+                    }
+                    ul{
+                        padding: 0;
+                        li{
+                            margin-bottom: 1px;
+                            a{
+                                display: inline-block;
+                                text-decoration: none;
+                                color: $slider_txt_clr;
+                                transition: all ease-in-out .2s ;
+                                &:hover{
+                                    font-weight: 600;
+                                    color: rgb(168, 20, 20);
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                    }
                 }
+            }
+        }
+    }
+ }
+ .copyright{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    @media(max-width:576px){
+        flex-direction: column;
+        align-items: center;
+        padding-left: 17px;
+        padding-right: 17px;
+        justify-content: center;
+    }
+    .copyright_left{
+        display: inline-block;
+        span{
+            color: $slider_txt_clr;
+            @media(max-width:576px){
+            font-size: 14px;
+            }
+        }
+    }
+    .copyright_right{
+        display: inline-block;
+        ul{
+            padding: 0;
+            display: flex;
+            gap: 5px;
+            @media(max-width:576px){
+                gap: 1px;
+                justify-content: start;
+                }
+            li{
+
             }
         }
     }
