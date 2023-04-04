@@ -344,6 +344,88 @@ header{
       height: 20px;
     }
 }
+//mobnav content
+.mob_nav_content{
+    display: none;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    
+    .mobnavcont_icons{
+       padding:10px;
+        background-color: $btn_clr;
+        display: flex;
+        justify-content: space-between;
+        i{
+            font-size: 23px;
+            display: inline-block;
+            font-weight: 600;
+        }
+        ul{
+            display: flex;
+            gap: 10px;
+            li{
+               
+                i{
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+    .mobnavcont_body{
+        overflow-y: scroll;
+        height: 57vh;
+        padding:10px;
+        ul{
+            padding: 0;
+            li{
+                display: flex;
+                justify-content: space-between;
+                color: rgb(135, 131, 131);
+                margin-bottom: 10px;
+                
+            }
+        }
+    }
+    .mobnavcont_contact{
+        padding: 10px;
+        p{
+            color: $slider_txt_clr;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        ul{
+            padding: 0;
+            li{
+                color: $slider_txt_clr;
+                margin-bottom: 5px;
+                i{
+                    color: $btn_clr;
+                }
+            }
+        }
+    }
+    .mobnavcont_ftr{
+        width: 100%;
+        background-color: rgba(222, 215, 215, 0.67);
+        padding: 20px 10px;
+        position: absolute;
+        bottom: 0px;
+        p{
+            margin-bottom: 2px;
+            font-weight: 600;
+        }
+        select{
+          width: 100%;
+          background-color: transparent;
+          border: none;
+        }
+    }
+}
 
 // slider 
 html,body {

@@ -28,6 +28,17 @@ window.addEventListener("scroll",()=>{
       navfix.classList.remove("active_nav")
    }
 })
+//show mobnav content
+var OpenContent=document.querySelector(".openmobcontent");
+var Mobnavcontent=document.querySelector(".mob_nav_content");
+var Closecontent=document.querySelector(".closemobcontent");
+
+OpenContent.addEventListener("click",()=>{
+  Mobnavcontent.style.display="block";
+})
+Closecontent.addEventListener("click",()=>{
+  Mobnavcontent.style.display="none";
+})
 //beastseal slider js
 var swiper = new Swiper(".mySwiper", {
    spaceBetween: 10,

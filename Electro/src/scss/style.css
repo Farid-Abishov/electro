@@ -354,6 +354,83 @@ header #mob_nav .mob_nav_container .mob_icons ul li i {
   height: 20px;
 }
 
+.mob_nav_content {
+  display: none;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+.mob_nav_content .mobnavcont_icons {
+  padding: 10px;
+  background-color: #fed700;
+  display: flex;
+  justify-content: space-between;
+}
+.mob_nav_content .mobnavcont_icons i {
+  font-size: 23px;
+  display: inline-block;
+  font-weight: 600;
+}
+.mob_nav_content .mobnavcont_icons ul {
+  display: flex;
+  gap: 10px;
+}
+.mob_nav_content .mobnavcont_icons ul li i {
+  font-size: 23px;
+}
+.mob_nav_content .mobnavcont_body {
+  overflow-y: scroll;
+  height: 57vh;
+  padding: 10px;
+}
+.mob_nav_content .mobnavcont_body ul {
+  padding: 0;
+}
+.mob_nav_content .mobnavcont_body ul li {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(135, 131, 131);
+  margin-bottom: 10px;
+}
+.mob_nav_content .mobnavcont_contact {
+  padding: 10px;
+}
+.mob_nav_content .mobnavcont_contact p {
+  color: #333e48;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.mob_nav_content .mobnavcont_contact ul {
+  padding: 0;
+}
+.mob_nav_content .mobnavcont_contact ul li {
+  color: #333e48;
+  margin-bottom: 5px;
+}
+.mob_nav_content .mobnavcont_contact ul li i {
+  color: #fed700;
+}
+.mob_nav_content .mobnavcont_ftr {
+  width: 100%;
+  background-color: rgba(222, 215, 215, 0.67);
+  padding: 20px 10px;
+  position: absolute;
+  bottom: 0px;
+}
+.mob_nav_content .mobnavcont_ftr p {
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+.mob_nav_content .mobnavcont_ftr select {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
 html, body {
   position: relative;
   height: 100%;
