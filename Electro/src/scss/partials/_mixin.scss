@@ -25,4 +25,24 @@ position: $pstn;
 box-shadow: $bx_shdw;
 top: $top;
 }
+@mixin loginbtn(
+$bg_clr,
+$border,
+$f_size,
+$paddng,
+$br_r,
+$clr,
+$f_weg,
+$margin
+){
+background-color: $bg_clr;
+border: $border;
+font-size: $f_size;
+padding: $paddng;
+border-radius: $br_r;
+color: $clr;
+font-weight: $f_weg;
+margin-top: $f_weg;
+}
+
 
