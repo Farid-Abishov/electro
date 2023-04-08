@@ -225,6 +225,7 @@ header{
                     width: 310px;
                     z-index: 2;
                     padding: 0;
+                    display: none;
                     background-color: #fff;
                     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
                     li{
@@ -254,7 +255,7 @@ header{
                     }
                 }
                 .passive_cntnt{
-                    display: none;
+                    display: block;
                 }
             }
         

@@ -234,6 +234,7 @@ header #header_ftr .container .col-3 .department_cntnt {
   width: 310px;
   z-index: 2;
   padding: 0;
+  display: none;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
@@ -270,7 +271,7 @@ header #header_ftr .container .col-3 .department_cntnt li .container {
   height: 405px;
 }
 header #header_ftr .container .col-3 .passive_cntnt {
-  display: none;
+  display: block;
 }
 header #header_ftr .container .col-2 span {
   font-size: 13px;
