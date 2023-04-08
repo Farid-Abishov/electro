@@ -1618,6 +1618,89 @@ html, body {
   accent-color: rgb(133, 133, 133);
 }
 
+#Account {
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+#Account .container {
+  padding: 0;
+}
+#Account .container .acc_title {
+  font-size: 14px;
+}
+#Account .container .acc_title a {
+  text-decoration: none;
+  color: black;
+  transition: all ease-in-out 0.3s;
+}
+#Account .container .acc_title a:hover {
+  color: #fed700;
+}
+#Account .container .acc_title i {
+  font-size: 12px;
+}
+#Account .container .row {
+  margin: 0;
+  padding: 0px 30px;
+}
+#Account .container .row .col-xl-6 p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+#Account .container .row .col-xl-6 .progress {
+  height: 1px;
+}
+#Account .container .row .col-xl-6 form label {
+  display: block;
+  font-weight: 600;
+  margin-top: 8px;
+}
+#Account .container .row .col-xl-6 form input {
+  margin-top: 8px;
+  display: block;
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid rgba(191, 186, 186, 0.759);
+  padding: 6px 0px;
+}
+#Account .container .row .col-xl-6 form .frm_ftr {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+#Account .container .row .col-xl-6 form .frm_ftr span {
+  font-size: 14px;
+  color: rgb(119, 116, 116);
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+#Account .container .row .col-xl-6 form .frm_ftr span:hover {
+  color: #fed700;
+}
+#Account .container .row .col-xl-6 form button {
+  background-color: #fed700;
+  border: none;
+  font-size: 13px;
+  padding: 10px 25px;
+  border-radius: 20px;
+  color: #333e48;
+  font-weight: 600;
+  margin-top: 10px;
+}
+#Account .container .row .col-xl-6 .form_container {
+  padding: 0px 25px;
+}
+#Account .container .row .col-xl-6 .form_container ul {
+  padding: 0;
+}
+#Account .container .row .col-xl-6 .form_container ul li {
+  margin-top: 6px;
+  font-size: 13px;
+}
+#Account .container .row .col-xl-6 .form_container ul li i {
+  color: rgb(11, 168, 11);
+}
+
 #header_ftr .col-7 ul {
   display: flex;
   padding-top: 6px;
