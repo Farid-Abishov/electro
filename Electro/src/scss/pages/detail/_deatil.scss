@@ -209,3 +209,105 @@
         }
     }
 }
+//accessories section
+#accessories{
+    padding: 60px 0px;
+    .container{
+        padding: 0;
+        border: 1px solid rgb(207, 204, 204);
+        border-radius: 15px;
+        .acces_title{
+            display: flex;
+            justify-content: center;
+           ul{
+            padding: 0 !important;
+            display: flex;
+            gap: 20px;
+            @media(max-width:576px){
+                gap: 13px;
+                li{
+                    font-size: 14px;
+                }
+            }
+            li{
+                color: rgb(136, 131, 131);
+                &:nth-child(1){
+                    font-weight: 600;
+                    color: #333333;
+                    border-bottom: 2px solid $btn_clr;
+                }
+            }
+           }
+        }
+        .row{
+            margin: 0;
+            padding: 20px;
+           
+            .col-xl-3{
+              .acces_item{
+                p{
+                    margin: 0;
+                    font-size: 15px;
+                    color:$card_txt_clr;
+                    font-weight: 600;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                span{
+                    font-size: 18px;
+                    color: rgb(147, 145, 145);
+                    font-weight: 500;
+                }
+              }
+              .acces_btn{
+                p{
+                    color:rgb(176, 10, 10);
+                    font-size: 23px;
+                }
+                button{
+                    background-color: $btn_clr;
+                    border-radius: 18px;
+                    border: none;
+                    width: 250px;
+                    padding: 10px 20px;
+                    color: $cartprice_color;
+                    font-weight: 600;
+                    transition: all ease-in-out .3s;
+                    &:hover{
+                        color: #fff;
+                        background-color: $slider_txt_clr;
+                    }
+                }
+              }
+            }
+        }
+        .acces_ftr{
+            ul{
+                li{
+                    color: $card_txt_clr;
+                    text-decoration: underline;
+                    &:nth-child(1){
+                      color: #333333;
+                      text-decoration: none;
+                    }
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                    select{
+                        border: 1px solid rgba(174, 172, 172, 0.79);
+                        border-radius: 10px;
+                        padding: 0px 10px;
+                        color: #333333;
+                    }
+                    input{
+                    accent-color: rgb(133, 133, 133);
+                    }
+                
+                }
+            }
+        }
+
+    }
+}

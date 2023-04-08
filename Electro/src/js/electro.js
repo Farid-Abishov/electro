@@ -96,3 +96,17 @@ minus.addEventListener('click', () => {
   let val = parseInt(number_el.innerText);
   number_el.innerText = --val;
 });
+//checked input
+const Check=document.querySelector(".check");
+const None_card=document.querySelector(".none_card");
+
+Check &&Check.addEventListener("click",()=>{
+  if(Check.checked==true){
+    None_card.style.display="block";
+  }
+  else {
+    None_card.style.display="none";
+  }
+})
+
+  
